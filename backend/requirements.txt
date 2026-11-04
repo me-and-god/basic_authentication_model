@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+dotenv
+alembic
+pydantic
+sqlalchemy[asyncio]
+asyncpg
+pwdlib
+pwdlib[argon2]
+pydantic_settings
+PyJWT
+slowapi

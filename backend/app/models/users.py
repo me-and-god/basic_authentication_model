@@ -1,3 +1,6 @@
+"""Database table model"""
+
+
 from app.core.base import Base
 
 from uuid import UUID
