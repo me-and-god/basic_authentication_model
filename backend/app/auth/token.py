@@ -26,19 +26,19 @@ settings = Settings()  # type: ignore
 # function to create a token and get that to the user logging in 
 
 def create_access_token(
-        user_id: str
-) -> str:
+                        user_id: str
+                ) -> str:
 
     expire_at = datetime.now(timezone.utc) + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRY_MINUTES)
 
     payload = {
-        "sub": str(user_id),
-        "exp": expire_at
-    }
+                "sub": str(user_id),
+                "exp": expire_at
+            }
 
 
     return jwt.encode(
-        payload=payload,
-        key=settings.JWT_SECRET_KEY,
-        algorithm=settings.JWT_ALGORITHM
-    )
+                    payload=payload,
+                    key=settings.JWT_SECRET_KEY,
+                    algorithm=settings.JWT_ALGORITHM
+                )
