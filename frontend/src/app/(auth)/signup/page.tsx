@@ -1,3 +1,4 @@
+import SignupForm from "@/components/auth/SignupForm"
 
 
 const SignupPage = () => {
@@ -11,7 +12,7 @@ const SignupPage = () => {
                 </div>
 
 
-              <SignupPage/>
+              <SignupForm/>
                 
     </div>
   )

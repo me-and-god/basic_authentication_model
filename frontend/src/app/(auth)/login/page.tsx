@@ -1,4 +1,4 @@
-
+import LoginForm from "@/components/auth/LoginForm"
 
 const LoginPage = () => {
   return (
@@ -11,7 +11,7 @@ const LoginPage = () => {
                 </div>
 
 
-                <LoginPage/>
+                <LoginForm/>
                 
     </div>
   )
